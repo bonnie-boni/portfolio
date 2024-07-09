@@ -1,0 +1,105 @@
+.education__content{
+    margin: 2em 1em;
+    border-top-left-radius: 85px ;
+    border-bottom-right-radius: 85px ;
+    border-bottom-left-radius: 15px ;
+    border-top-right-radius: 15px ;
+    box-shadow: 0 0 15px var(--color-text);
+    background-color:rgba(26, 70, 140, 0.233);
+    padding-bottom: 1em;
+}
+.education__content h1{
+    color: var(--color-text);
+    padding: 1em 2em;
+    
+}
+.education__content p{
+    color: #05d3ee;
+    padding: 1em 2em;
+    
+}
+.education__content-intro{
+    display: flex;
+    align-items: center;
+}
+button{
+    padding: 12px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    font-family: var(--font-family);
+    color:#1ea7dd;
+    background-color: #fff;
+    transition: 0.2s ease;
+}
+button:hover{
+    scale: 1.1;
+    cursor: pointer;
+    color: #fff;
+    background-color: #1ea7dd;
+}
+.education__content-intro p{
+    flex: 2;
+    text-align: end;
+}
+.education__content-intro h1{
+    flex: 1;
+    text-align: start;
+}
+.education__content-skills{
+    display: flex;
+    padding: 1em 5px;
+}
+.education__content-skills h1{
+    align-self: center;
+}
+.education__content-skills div{
+    /* padding: 5px; */
+    text-align: end;
+    margin: 8px;
+    border-radius: 15px;
+    justify-content: space-between;
+    background-color: #7e78be39;
+    transition: 0.5s;
+
+}
+.education__content-skills div:hover{
+    scale: 1.05;
+    box-shadow: 0 0 15px #ee0566;
+}
+.education__content-skills div h2{
+    padding-top: 1em;
+    color: bisque;
+    text-align: center;
+}
+.education__content-skills div a{
+    color: bisque;
+    text-align: center;
+}
+
+@media screen and (max-width: 750px){
+    .education__content-skills-set div{
+        margin: 5px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .education__content-intro p{
+        text-align: start;
+    } 
+    .education__content-skills h1{
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .education__content-intro{
+        flex-wrap: wrap;
+    }
+    .education__content-intro p button{
+        align-self: center;
+    }
+
+    .education__content-skills a{
+        color: aqua;
+    }
+}
